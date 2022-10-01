@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import HeaderComponent from './components/HeaderComponent';
+import FormComponent from './components/FormComponent';
+import ListComponent from './components/ListComponent';
 
-function App() {
+import { useEffect, useState } from 'react';
+import { BsTrash, BsBookmarkCheck, BsBookmarkCheckFill } from 'react-icons/bs';
+
+function App() {  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HeaderComponent />
+      <FormComponent />
     </div>
   );
 }

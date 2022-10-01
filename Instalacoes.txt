@@ -1,0 +1,16 @@
+// Vai simular a api com um servidor fictisio, como se fosse uma api real
+- npm i json-server 
+
+// Biblioteca para icones
+- npm i react-icons
+
+// Na pasta raiz do projeto crio uma pasta 'data' e um arquivo 'db.json'
+// Agr no package.json em 'scripts':
+- "server": "json-server --watch data/db.json --port 5000"
+
+// Rodar os 2 comandos abaixo em 2 terminais diferentes para rodar o projeto
+// Para rodar o server
+- npm run server
+// Para rodar o react 
+- npm start
+
